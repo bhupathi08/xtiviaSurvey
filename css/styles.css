@@ -1,0 +1,98 @@
+
+.top-header{
+    background-color: #005587;
+    position: relative;
+    font-size: 16px;
+    transition: background-color .4s,transform .4s,opacity .4s ease-in-out;
+    width: 100%;
+}
+.body-container{
+    padding: 12px 30px;
+    font-weight: bold;
+}
+.body-container span{
+    color: #fff;
+}
+.org-url{
+    float: right;
+}
+.logo-container{
+    width: 15%;
+}
+.banner-img{
+    background-image: url(../images/XTIVIA_Home_Page_Banner.jpg) !important;
+    background-position: center;
+    background-size: cover;
+    max-height: 50%;
+    position: relative;
+}
+.banner-content h1{
+    font-size: 45px;
+}
+.banner-content p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.card{
+    background-color: #fff !important;
+    border: 0px solid #dbd9d4 !important;
+	top: -30px;
+	border-radius: 0px;
+	margin:20px;
+	margin-top:25px !important;
+	box-shadow: 0 0 5px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.6);
+	-o-box-shadow: 0 0 5px rgba(0,0,0,0.6);
+	}
+.card-columns{
+    column-count: 1;
+}
+.card-title{
+    font-size: 17px;
+    font-weight: 500;
+}
+.btn-prop{
+    color: #fff;
+    border-radius: 0;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.radio-label{
+    font-size:16px;
+    font-weight: 400;
+}
+footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3a3a3a;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding:10px;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+    .banner-img{
+        background-image: url(../images/XTIVIA_Home_Page_Banner_Mobile.jpg) !important;
+        background-position: top;
+    }
+    .logo-container{
+        width: 30%;
+    }
+    .body-container{
+        padding: 12px 15px;
+    }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 991px) {
+
+
+}

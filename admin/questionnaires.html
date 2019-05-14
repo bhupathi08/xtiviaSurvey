@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title> Questionnaire List</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta content="" name="description" />
+  <meta content="" name="author" />
+  <!-- end: META -->
+  <!-- start: GOOGLE FONTS -->
+  <link
+    href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
+    rel="stylesheet" type="text/css" />
+  <!-- end: GOOGLE FONTS -->
+  <!-- start: MAIN CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/common.css">
+</head>
+
+<body>
+  <div class="main-container">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top p-0">
+        <div class="container-fluid">
+          <a class="navbar-brand logobg" href="#">
+            <img src="../images/xtivia-logo.png" alt="XTIVIA" id="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Dashboard
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="questionnaires.html">Questionnaires</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Report</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+
+              <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">Dennis Robinson
+                  <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="index.html">Logout</a></li>         
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container pt-3 pb-5">
+      <div class="row">
+        <div class="col-md text-right"> <button type="button" onclick="window.location.href='add-questionnaire.html'"
+            class="btn btn-success add-btn"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add
+            Questionnaire</button></div>
+      </div>
+      <div class="jumbotron">
+        <h1 onclick="window.location.href='questionnaire-detail.html'">Banking Questionnaire</h1>
+        <label class="switch">
+          <input type="checkbox" name="active" class="check">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="jumbotron">
+        <h1 onclick="window.location.href='questionnaire-detail.html'">Healthcare Questionnaire</h1>
+        <label class="switch">
+          <input type="checkbox" checked name="active" class="check">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="jumbotron">
+        <h1 onclick="window.location.href='questionnaire-detail.html'">Telecommunication Questionnaire</h1>
+        <label class="switch">
+          <input type="checkbox" name="active" class="check">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <div class="jumbotron">
+        <h1 onclick="window.location.href='questionnaire-detail.html'">Retail Questionnaire</h1>
+        <label class="switch">
+          <input type="checkbox" name="active" class="check">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-info">© XTIVIA, Inc. 2019 | <a href="www.xtivia.com/privacy/"
+                class="white-color"><strong>Privacy
+                  Policy</strong></a>
+              |
+              <a href="/terms-of-use/" class="white-color"><strong>Terms of Use</strong></a> </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.check').click(function() {
+        $('.check').not(this).prop('checked', false);
+    });
+});
+</script>
+</body>
+</html>

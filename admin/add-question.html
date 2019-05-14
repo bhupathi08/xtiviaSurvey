@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title> Add Question</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta content="" name="description" />
+  <meta content="" name="author" />
+  <!-- end: META -->
+  <!-- start: GOOGLE FONTS -->
+  <link
+    href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
+    rel="stylesheet" type="text/css" />
+  <!-- end: GOOGLE FONTS -->
+  <!-- start: MAIN CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+  <div class="main-container">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top p-0">
+        <div class="container-fluid">
+          <a class="navbar-brand logobg" href="#">
+            <img src="../images/xtivia-logo.png" alt="XTIVIA" id="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Dashboard
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="questionnaires.html">Questionnaires</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Report</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">Dennis Robinson
+                  <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="index.html">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container pt-3 pb-5">
+      <div class="row">
+        <div class="col-md text-right"> <button type="button" onclick="window.location.href='add-group.html'"
+            class="btn btn-success add-btn add-btn-blue"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add
+            Group</button> <button type="button" onclick="window.location.href='add-question.html'"
+            class="btn btn-success add-btn "><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add
+            Question</button></div>
+      </div>
+      <div class="jumbotron">
+        <h1>Healthcare Questionnaire <i class="fa fa-pencil" onclick="window.location.href='add-questionnaire.html'"
+            aria-hidden="true"></i></h1>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div style="clear:both"> </div>
+      <div class="jumbotron white-bg">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 pr-0 col-lg-4">
+           <ul id="sortable">
+              <li class="ui-state-default active">Generic<i class="fa fa-trash-o remove-grou" aria-hidden="true"></i> <i
+                  class="fa fa-pencil"  onclick="window.location.href='add-group.html'" aria-hidden="true"></i></li>
+              <li class="ui-state-default">Sales <i class="fa fa-trash-o remove-grou" aria-hidden="true"></i> <i
+                  class="fa fa-pencil"  onclick="window.location.href='add-group.html'" aria-hidden="true"></i></li>
+              <li class="ui-state-default">Marketing <i class="fa fa-trash-o remove-grou" aria-hidden="true"></i> <i
+                  class="fa fa-pencil"  onclick="window.location.href='add-group.html'" aria-hidden="true"></i></li>
+              <li class="ui-state-default">Technology  <i class="fa fa-trash-o remove-grou" aria-hidden="true"></i> <i
+                  class="fa fa-pencil"  onclick="window.location.href='add-group.html'" aria-hidden="true"></i></li>
+              <li class="ui-state-default">Infrastructure<i class="fa fa-trash-o remove-grou" aria-hidden="true"></i> <i
+                  class="fa fa-pencil"  onclick="window.location.href='add-group.html'" aria-hidden="true"></i></li>
+              <li class="ui-state-default">Mulesoft<i class="fa fa-trash-o remove-grou" aria-hidden="true"></i> <i
+                  class="fa fa-pencil"  onclick="window.location.href='add-group.html'" aria-hidden="true"></i></li>
+            </ul>
+          </div>
+          <div class="col-md-12 col-sm-12  pl-2 pr-4 col-lg-8">
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="heading-1">
+                  <h5 class="mb-0">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="false"
+                      aria-controls="collapse-1">
+                      What type of service are you looking for? <i class="fa fa-trash-o remove-ques" aria-hidden="false"></i> <i
+                        class="fa fa-pencil" onclick="window.location.href='add-question.html'" aria-hidden="true"></i>
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapse-1" class="collapse" data-parent="#accordion" aria-labelledby="heading-1">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-6 form-data col-sm-12 ">
+                        <div class="form-check  custom-control custom-radio">
+                          <label class="form-check-label">
+                            <input type="radio" class="custom-control-input" id="customControlValidation1" name="radio-stacked" required>
+							<label class="radio-label grey-color custom-control-label" for="customControlValidation1">Mobile Application</label>
+                          </label>
+                        </div>
+                        <div class="form-check  custom-control custom-radio">
+                          <label class="form-check-label">
+                            <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+							<label class="radio-label grey-color custom-control-label" for="customControlValidation2">Web Application</label>
+                          </label>
+                        </div>
+                        <div class="form-check  custom-control custom-radio">
+                          <label class="form-check-label">
+                            <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+							<label class="radio-label grey-color custom-control-label" for="customControlValidation3">Desktop Application</label>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-12 "><textarea class="form-control" placeholder="Skip condition" rows="5"
+                          id="comment"></textarea> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading-2">
+                  <h5 class="mb-0">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false"
+                      aria-controls="collapse-2">
+                      What type of technologies are you looking for? <i class="fa fa-trash-o remove-ques" aria-hidden="true"></i> <i
+                        class="fa fa-pencil" onclick="window.location.href='add-question.html'"  aria-hidden="true"></i>
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapse-2" class="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-6 form-data col-sm-12 ">
+                        <div class="form-check  custom-control custom-radio">
+                          <label class="form-check-label">
+                            <input type="radio" class="custom-control-input" id="customControlValidation1" name="radio-stacked" required>
+							<label class="radio-label grey-color custom-control-label" for="customControlValidation1">Mobile Application</label>
+                          </label>
+                        </div>
+                        <div class="form-check  custom-control custom-radio">
+                          <label class="form-check-label">
+                            <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+							<label class="radio-label grey-color custom-control-label" for="customControlValidation2">Web Application</label>
+                          </label>
+                        </div>
+                        <div class="form-check  custom-control custom-radio">
+                          <label class="form-check-label">
+                            <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+							<label class="radio-label grey-color custom-control-label" for="customControlValidation3">Desktop Application</label>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-12 "><textarea class="form-control" placeholder="Skip condition" rows="5"
+                          id="comment"></textarea> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading-3">
+                  <h5 class="mb-0">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-3" aria-expanded="false"
+                      aria-controls="collapse-3">
+                      What type of server are you looking for? <i class="fa fa-trash-o remove-ques" aria-hidden="true"></i> <i
+                        class="fa fa-pencil" onclick="window.location.href='add-question.html'"  aria-hidden="true"></i>
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapse-3" class="collapse" data-parent="#accordion" aria-labelledby="heading-3">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-6 form-data col-sm-12 ">
+                        <div class="form-check  custom-control custom-radio">
+                          <label class="form-check-label">
+                            <input type="radio" class="custom-control-input" id="customControlValidation1" name="radio-stacked" required>
+							<label class="radio-label grey-color custom-control-label" for="customControlValidation1">Mobile Application</label>
+                          </label>
+                        </div>
+                        <div class="form-check  custom-control custom-radio">
+                          <label class="form-check-label">
+                            <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+							<label class="radio-label grey-color custom-control-label" for="customControlValidation2">Web Application</label>
+                          </label>
+                        </div>
+                        <div class="form-check  custom-control custom-radio">
+                          <label class="form-check-label">
+                            <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+							<label class="radio-label grey-color custom-control-label" for="customControlValidation3">Desktop Application</label>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-12 "><textarea class="form-control" placeholder="Skip condition" rows="5"
+                          id="comment"></textarea> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="jumbotron">
+                <div class="row">
+                  <div class="col-md-8 col-sm-12 form-group"> <input type="text" placeholder="Question Name" class="form-control"></div>
+                  <div class="col-md-4 col-sm-12 form-group">
+                    <div class="form-group"> <select id="formelements" class="form-control">
+                        <option>Select</option>
+                        <option value="checkbox" selected>Checkbox</option>
+                        <option value="radio">Radio button</option>
+                        <option value="textarea">Textarea</option>
+                      </select> </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-8 form-data col-sm-12 ">
+                    <div class="checkbox box">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value="">Option 1
+                        </label></div>
+                    </div>
+                    <div class="radio box">                    					  
+					  
+	<div class="input-wrapper form-data">
+	<div class="row"> 
+		<div class="col-md-1 col-sm-1  m-0 text-center"><div class="form-check  custom-control custom-radio">
+                          <label class="form-check-label">
+                            <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+							<label class="radio-label grey-color custom-control-label" for="customControlValidation2"></label>
+                          </label>
+                        </div> </div>
+		<div class="col-md-10 col-sm-10 m-0"><input type="text" class="form-control" name="field[]" value=""/> </div>
+		<div class="col-md-1 col-sm-1 m-0 text-center"><i class="add-input fa fa-plus-square"></i> </div>
+		</div>
+	</div>
+
+
+
+						
+                    </div>
+                    <div class="textarea box  form-group"><textarea class="form-control" rows="5"></textarea></div>
+                  </div>
+                  <div class="col-md-4 col-sm-12 "> <textarea class="form-control" placeholder="Skip condition" rows="5"
+                      id="comment"></textarea></div>
+                </div>
+              </div>
+              <div class="card-footer text-right white-back"> <button type="button"
+                  class="btn btn-outline-dark cancel-item-btn">Cancel</button> <button type="button"
+                  class="btn btn-outline-primary add-item-btn">Save</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-info">© XTIVIA, Inc. 2019 | <a href="www.xtivia.com/privacy/"
+                class="white-color"><strong>Privacy
+                  Policy</strong></a>
+              |
+              <a href="/terms-of-use/" class="white-color"><strong>Terms of Use</strong></a> </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $(function () {
+	  
+
+        $("#sortable").sortable();
+        $("#sortable").disableSelection();
+      });
+
+      $(document).ready(function () {
+        $("#formelements").change(function () {
+          $(this).find("option:selected").each(function () {
+            var optionValue = $(this).attr("value");
+            if (optionValue) {
+              $(".box").not("." + optionValue).hide();
+              $("." + optionValue).show();
+            } else {
+              $(".box").hide();
+            }
+          });
+        }).change();
+      });
+	  
+	  $(document).ready(function(){
+    var max_input_fields = 10;
+    var add_input = $('.add-input');
+    var input_wrapper = $('.input-wrapper');
+    var new_input = '<div class="row"><div class="col-md-1 m-0 text-center"><div class="form-check  custom-control custom-radio"> <label class="form-check-label"><input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required><label class="radio-label grey-color custom-control-label" for="customControlValidation2"></label></label></div> </div><div class="col-md-10 m-0"><input type="text" class="form-control" name="field[]" value=""/> </div>		<div class="col-md-1 m-0 text-center"><i class="remove-input fa fa-minus-square"></i> </div>';
+	
+    var add_input_count = 1; 
+	$(add_input).click(function(){
+        if(add_input_count < max_input_fields){
+            add_input_count++; 
+            $(input_wrapper).append(new_input); 
+        }
+    });
+	$(input_wrapper).on('click', '.remove-input', function(e){
+        e.preventDefault();
+        $(this).parent().parent('div').remove();
+        add_input_count--;
+    });
+	
+	       $('.remove-grou').click(function () {
+       $(this).parent().remove();
+        });
+		$('.fa-trash-o.remove-ques').click(function () {
+          $(this).parent().parent().parent().parent().remove();
+        });
+});
+	  
+	  
+    </script>
+</body>
+
+</html>

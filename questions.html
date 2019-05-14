@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Questionnaire Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- end: META -->
+    <!-- start: GOOGLE FONTS -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
+        rel="stylesheet" type="text/css" />
+    <!-- end: GOOGLE FONTS -->
+    <!-- start: MAIN CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="icons/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="icons/themify-icons/themify-icons.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid pl-0 pr-0">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="top-header">
+                    <div class="body-container">
+                        <span class="phone-no">
+                            <i class="fa fa-phone"></i> (888) 685-3101 ext. 2
+                        </span>
+                        <span class="org-url">www.xtivia.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <header class="main-header">
+                    <div class="body-container">
+                        <div class="logo-container">
+                            <a href="http://www.xtivia.com"><img src="images/xtivia-logo.png"></a>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="banner-img">
+                    <div class="banner-content">
+                        <h1 class="white-color text-center pt-4 mb-0">Superior IT Solutions</h1>
+                        <p class="white-color text-center pb-2">Exceptional Technology Expert</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-9">
+                            <div class="card-columns">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <!-- <div class="question">
+                                            <p class="grey-color pl-5 pt-5 card-title">What type of application are you looking for?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="pl-6 pb-3 pt-2 custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input" id="customControlValidation1" name="radio-stacked"
+                                                                required>
+                                                            <label class="radio-label grey-color custom-control-label" for="customControlValidation1">Mobile
+                                                                Application</label>
+                                                        </div>
+                                                        <div class="pl-6 pb-3 custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked"
+                                                                required>
+                                                            <label class="radio-label grey-color custom-control-label" for="customControlValidation2">Web
+                                                                Application</label>
+                                                        </div>
+                                                        <div class="pl-6 pb-3 custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked"
+                                                                required>
+                                                            <label class="radio-label grey-color custom-control-label" for="customControlValidation3">Desktop
+                                                                Application</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                        <div class="question">
+                                            <p class="grey-color pl-5 pt-5 card-title">Do you currently have an existing Managed Services Contract with a 3rd party vendor ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>                                                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">Do you currently have an existing MuleSoft Managed Services Contract ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">What type of manage service arrangement is your organization intersted in ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">What support model best suits you ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">If other than 24*7 model, which shift best suits your need ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">What type of environment do you currently have your MuleSoft on ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">Have you worked with offshore team in the past ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">Are you open to offshore ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">What type of support model are you intersted in ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">Do you have any SaaS/PaaS/IaaS integrating or plan to have any in the future ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">How many Services/microservices in your application network ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">Do you have API monitoring and management in place ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">Are your services SLA quantified and measured ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">Do You have a well-defined support, product rollout and services ownership ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">How many servers does your organization operate ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">Are you using a backup system and if so, what kind of backup are you using ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">How often do you backup your servers ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">In the event of a disaster, failure, or outage, how long would it take to get your system back up and running ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">Are you facing any challenges in you MuleSoft implementation ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">Do you have the business-critical systems, as part of you Mule Application Network ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">Are you undertaking any Legacy Modemization projects, which will be integrate to your Mule Application Network ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">What are your strategic projects for this year ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">What stage are you in right now, with your Digital transformation plan ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="question hide">
+                                            <p class="grey-color pl-5 pt-5 card-title">Have you done any recent acquisition you want to integrate using MuleSoft ?</p>
+                                            <div class="form-data px-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class=" pl-5 pb-3 pt-2">
+                                                            <textarea rows="5" cols="50" class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-11 col-11 py-3">
+                                            <div class="float-right">
+                                                <a href="#" class="btn btn-prop btn-orange skip-ques">SKIP QUESTION<i class="fa fa-angle-right pl-2"></i></a> <a
+                                                    href="#" class="exit-btn btn btn-prop btn-red ">EXIT<i class="fa fa-angle-right pl-2"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="background-grey">
+                                        <div class="row">
+                                            <div class="col-md-7 col-11 py-3">
+                                                <div class="float-right">
+                                                    <a href="#" class="btn btn-prop btn-grey prev-btn"><i class="fa fa-angle-left pr-2"></i>BACKWARD</a>
+                                                    <a href="#" class="btn btn-prop btn-blue next-btn">FORWARD<i class="fa fa-angle-right pl-2"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-info">© XTIVIA, Inc. 2019 | <a href="www.xtivia.com/privacy/" class="white-color"><strong>Privacy
+                            Policy</strong></a>
+                    |
+                    <a href="/terms-of-use/" class="white-color"><strong>Terms of Use</strong></a> </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            if ($('.question:not(.hide)').prev().length < 1) {
+                 $(".prev-btn").addClass("hide");
+            }
+           $(".exit-btn").click(function(){
+               if(confirm("Do you want to exit the Questionnaire?")){
+                   $(location).attr('href', 'thank-you.html');
+               }
+           });
+           $(".next-btn").click(function(){
+               if($('.question:not(.hide)').find('textarea').val() !== ''){
+                    if ($('.question:not(.hide)').next().length >= 1) {
+                        $('.question:not(.hide)').addClass("hide").next().removeClass('hide');
+                         $(".prev-btn").removeClass("hide");
+                    }
+                    else {
+                            $(location).attr('href', 'thank-you.html');
+                    }
+               }
+               else{
+                   alert('Please fill the question or Skip the question to Proceed');
+               }
+           });
+           $(".prev-btn").click(function(){
+               var prevLen = $('.question:not(.hide)').prevAll().length;
+               if( prevLen >= 1){
+                    $('.question:not(.hide)').addClass("hide").prev().removeClass('hide');    
+                    if(prevLen == 1){
+                        $(".prev-btn").addClass("hide");
+                    }                
+               } 
+           });
+           $(".skip-ques").click(function(){
+               if (confirm("Do you want to skip the Question?")) {
+                    $('.question:not(.hide)').addClass("hide").next().removeClass('hide');
+               }
+               if ($('.question:not(.hide)').next().length == 0) {
+                     $(location).attr('href', 'thank-you.html');
+               }
+           });
+        });
+    </script>
+</body>
+
+</html>
